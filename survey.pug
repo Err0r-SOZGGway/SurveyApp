@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    block link
+      link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC", crossorigin="anonymous")
+      link(rel='stylesheet', type='text/css', href='/style.css')
+
+    style.
+      body {
+        background-color: rgb(204, 249, 149);
+      }
+      #main {
+        font-size: 40px;
+        margin: 40px;
+        text-align: center;
+      } 
+      .box {
+        margin:2em 0;
+        position: relative;
+        padding: 0.5em 1.5em;
+        border-top: solid 2px black;
+        margin: 0; 
+        padding: 0;
+      }
+      li {
+        margin: 20px;
+      }
+      
+
+    title アンケート一覧
+  body 
+  .container
+    h1#main アンケート一覧
+    div(class="box")
+    li: a(href="/enquetes/yaki-shabu") 焼き肉・しゃぶしゃぶ
+    li: a(href="/enquetes/rice-bread") ごはん・パン
+    li: a(href="/enquetes/sushi-pizza") 寿司・ピザ
+    br
+    a(href="/") 戻る
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM", crossorigin="anonymous") 
